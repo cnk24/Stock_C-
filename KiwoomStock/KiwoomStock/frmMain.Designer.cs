@@ -1,6 +1,6 @@
 ﻿namespace KiwoomStock
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.axKiwoom = new AxKHOpenAPILib.AxKHOpenAPI();
             ((System.ComponentModel.ISupportInitialize)(this.axKiwoom)).BeginInit();
             this.SuspendLayout();
