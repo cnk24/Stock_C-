@@ -16,5 +16,26 @@ namespace KiwoomStock
         {
             InitializeComponent();
         }
+
+
+        #region [FORM EVENT]
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            var communicator = new MsgBusCommunicator();
+            var stub = new MsgBusStub(communicator);
+
+            communicator.StartPumpMsgInBackground();
+            stub.HandlePythonWorldInvokeForEver();
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        #endregion [FORM EVENT]
+
+
     }
 }

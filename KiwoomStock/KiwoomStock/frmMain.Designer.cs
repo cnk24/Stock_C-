@@ -30,7 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.axKiwoom = new AxKHOpenAPILib.AxKHOpenAPI();
+            this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.logBuySell = new System.Windows.Forms.RichTextBox();
+            this.logComm = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.axKiwoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.SuspendLayout();
             // 
             // axKiwoom
@@ -42,15 +46,47 @@
             this.axKiwoom.Size = new System.Drawing.Size(60, 21);
             this.axKiwoom.TabIndex = 0;
             // 
-            // Form1
+            // dgvItems
+            // 
+            this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItems.Location = new System.Drawing.Point(12, 12);
+            this.dgvItems.Name = "dgvItems";
+            this.dgvItems.RowTemplate.Height = 23;
+            this.dgvItems.Size = new System.Drawing.Size(361, 298);
+            this.dgvItems.TabIndex = 1;
+            // 
+            // logBuySell
+            // 
+            this.logBuySell.Location = new System.Drawing.Point(379, 12);
+            this.logBuySell.Name = "logBuySell";
+            this.logBuySell.Size = new System.Drawing.Size(393, 298);
+            this.logBuySell.TabIndex = 2;
+            this.logBuySell.Text = "";
+            // 
+            // logComm
+            // 
+            this.logComm.Location = new System.Drawing.Point(12, 316);
+            this.logComm.Name = "logComm";
+            this.logComm.Size = new System.Drawing.Size(760, 234);
+            this.logComm.TabIndex = 3;
+            this.logComm.Text = "";
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.logComm);
+            this.Controls.Add(this.logBuySell);
+            this.Controls.Add(this.dgvItems);
             this.Controls.Add(this.axKiwoom);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Kiwoom";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axKiwoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -58,6 +94,9 @@
         #endregion
 
         private AxKHOpenAPILib.AxKHOpenAPI axKiwoom;
+        private System.Windows.Forms.DataGridView dgvItems;
+        private System.Windows.Forms.RichTextBox logBuySell;
+        private System.Windows.Forms.RichTextBox logComm;
     }
 }
 

@@ -1,0 +1,15 @@
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\KiwoomStock.exe.config
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\KiwoomStock.exe
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\KiwoomStock.pdb
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\Interop.KHOpenAPILib.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\AxInterop.KHOpenAPILib.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csprojAssemblyReference.cache
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\Interop.KHOpenAPILib.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\AxInterop.KHOpenAPILib.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csproj.ResolveComReference.cache
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.frmMain.resources
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.Properties.Resources.resources
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csproj.GenerateResource.cache
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csproj.CoreCompileInputs.cache
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.exe
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.pdb
