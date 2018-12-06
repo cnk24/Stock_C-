@@ -85,6 +85,15 @@ namespace KiwoomStock
         private void communicator_OnMessageEvent(string msgName, string message)
         {
             debugLog("type:{0} - msg:{1}", msgName, message);
+
+            if (msgName.Equals("매수"))
+            {
+
+            }
+            else if (msgName.Equals("매도"))
+            {
+
+            }
         }
 
         #endregion [Communicator Event]
