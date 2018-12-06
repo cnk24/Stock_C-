@@ -34,7 +34,9 @@
             this.logComm = new System.Windows.Forms.ListBox();
             this.logBuySell = new System.Windows.Forms.ListBox();
             this.btnWallet = new System.Windows.Forms.Button();
+            this.dgvOrder = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWallet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvWallet
@@ -71,9 +73,9 @@
             // 
             this.logComm.FormattingEnabled = true;
             this.logComm.ItemHeight = 12;
-            this.logComm.Location = new System.Drawing.Point(0, 316);
+            this.logComm.Location = new System.Drawing.Point(221, 316);
             this.logComm.Name = "logComm";
-            this.logComm.Size = new System.Drawing.Size(781, 244);
+            this.logComm.Size = new System.Drawing.Size(560, 244);
             this.logComm.TabIndex = 6;
             // 
             // logBuySell
@@ -95,11 +97,21 @@
             this.btnWallet.UseVisualStyleBackColor = true;
             this.btnWallet.Click += new System.EventHandler(this.btnWallet_Click);
             // 
+            // dgvOrder
+            // 
+            this.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOrder.Location = new System.Drawing.Point(0, 316);
+            this.dgvOrder.Name = "dgvOrder";
+            this.dgvOrder.RowTemplate.Height = 23;
+            this.dgvOrder.Size = new System.Drawing.Size(215, 244);
+            this.dgvOrder.TabIndex = 9;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.dgvOrder);
             this.Controls.Add(this.btnWallet);
             this.Controls.Add(this.logBuySell);
             this.Controls.Add(this.logComm);
@@ -112,6 +124,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWallet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,6 +136,7 @@
         private System.Windows.Forms.ListBox logComm;
         private System.Windows.Forms.ListBox logBuySell;
         private System.Windows.Forms.Button btnWallet;
+        private System.Windows.Forms.DataGridView dgvOrder;
     }
 }
 

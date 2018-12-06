@@ -55,6 +55,10 @@ namespace KiwoomStock
             dgvWallet.Columns.Add("매입금액", "매입금액");
             dgvWallet.Columns.Add("수수료합", "수수료합");
 
+            dgvOrder.Columns.Add("매매구분", "매매구분");
+            dgvOrder.Columns.Add("종목코드", "종목코드");
+            dgvOrder.Columns.Add("매매가", "매매가");
+
 
             var communicator = new MsgBusCommunicator();
             var stub = new MsgBusStub(communicator);
@@ -86,6 +90,10 @@ namespace KiwoomStock
         {
             debugLog("type:{0} - msg:{1}", msgName, message);
 
+            string[] split = message.Split('/');
+            string code = split[0];
+            int price = int.Parse(split[1]);
+
             if (msgName.Equals("매수"))
             {
 
@@ -94,6 +102,8 @@ namespace KiwoomStock
             {
 
             }
+
+            dgvOrder.Rows.Add(msgName, code, price);
         }
 
         #endregion [Communicator Event]
@@ -157,11 +167,23 @@ namespace KiwoomStock
             {
                 if (data.매매구분.EndsWith("매수"))
                 {
-
+                    int rowIndex = -1;
+                    DataGridViewRow row = dgvOrder.Rows
+                        .Cast<DataGridViewRow>()
+                        .Where(x => x.Cells["매매구분"].Value.ToString().Equals("매수") && x.Cells["종목코드"].Value.ToString().Equals(data.종목코드))
+                        .First();
+                    rowIndex = row.Index;
+                    dgvOrder.Rows.RemoveAt(rowIndex);
                 }
                 else if (data.매매구분.EndsWith("매도"))
                 {
-
+                    int rowIndex = -1;
+                    DataGridViewRow row = dgvOrder.Rows
+                        .Cast<DataGridViewRow>()
+                        .Where(x => x.Cells["매매구분"].Value.ToString().Equals("매도") && x.Cells["종목코드"].Value.ToString().Equals(data.종목코드))
+                        .First();
+                    rowIndex = row.Index;
+                    dgvOrder.Rows.RemoveAt(rowIndex);
                 }
 
                 // 보유종목 갱신
