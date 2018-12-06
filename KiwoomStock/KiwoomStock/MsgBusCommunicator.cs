@@ -23,14 +23,14 @@ namespace KiwoomStock
         /// </summary>
         private void PumpMessageOutForEver()
         {
-            for (int i = 0; i < int.MaxValue; i++)
-            {
-                if (OnMessageEvent != null)
-                    OnMessageEvent(string.Format(".NETMsg_{0}", i), string.Format(".NETMsgBody_{0}", i));
+            //for (int i = 0; i < int.MaxValue; i++)
+            //{
+            //    if (OnMessageEvent != null)
+            //        OnMessageEvent(string.Format(".NETMsg_{0}", i), string.Format(".NETMsgBody_{0}", i));
 
-                // sleep 1 seconds
-                Thread.Sleep(1000 * 1);
-            }
+            //    // sleep 1 seconds
+            //    Thread.Sleep(1000 * 1);
+            //}
         }
 
         /// <summary>
@@ -48,6 +48,9 @@ namespace KiwoomStock
             string price = split[1];
 
             Trace.WriteLine(string.Format("{0} : {1}", msgName, message));
+
+            if (OnMessageEvent != null)
+                OnMessageEvent(msgName, message);
         }
 
         /// <summary>

@@ -13,3 +13,16 @@ D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csproj.Generate
 D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csproj.CoreCompileInputs.cache
 D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.exe
 D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.pdb
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\Kiwoom.Api.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\log4net.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\Npgsql.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\System.ValueTuple.dll
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\Kiwoom.Api.pdb
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\Npgsql.pdb
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\Npgsql.xml
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\bin\Debug\System.ValueTuple.xml
+D:\GITHUB\Stock_C-\KiwoomStock\KiwoomStock\obj\Debug\KiwoomStock.csproj.CopyComplete
