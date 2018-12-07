@@ -167,22 +167,20 @@ namespace KiwoomStock
             {
                 if (data.매매구분.EndsWith("매수"))
                 {
-                    int rowIndex = -1;
                     DataGridViewRow row = dgvOrder.Rows
                         .Cast<DataGridViewRow>()
                         .Where(x => x.Cells["매매구분"].Value.ToString().Equals("매수") && x.Cells["종목코드"].Value.ToString().Equals(data.종목코드))
                         .First();
-                    rowIndex = row.Index;
+                    int rowIndex = row.Index;
                     dgvOrder.Rows.RemoveAt(rowIndex);
                 }
                 else if (data.매매구분.EndsWith("매도"))
                 {
-                    int rowIndex = -1;
                     DataGridViewRow row = dgvOrder.Rows
                         .Cast<DataGridViewRow>()
                         .Where(x => x.Cells["매매구분"].Value.ToString().Equals("매도") && x.Cells["종목코드"].Value.ToString().Equals(data.종목코드))
                         .First();
-                    rowIndex = row.Index;
+                    int rowIndex = row.Index;
                     dgvOrder.Rows.RemoveAt(rowIndex);
                 }
 
